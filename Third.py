@@ -57,7 +57,8 @@ print(f"My name is:{name} and age is :{age}") ## That f Alphabet is Very Importa
 s="GeeksForGeeks"
 print("geeks" in s)
 
+##Usage of the ARGS FUnction
 def Func(*args):
-    return sum(args)
+    return sum(args) 
 
 print(Func(1,2,3,4))
