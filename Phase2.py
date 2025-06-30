@@ -70,4 +70,4 @@ print(" The New Column Adde ",with_new_Col)
 ## Deletes
 arr=np.array([1,2,3])
 deleted=np.delete(arr,2)
-print(deleted)
+print("The Array After Delete",deleted)
