@@ -45,3 +45,20 @@ new_row = pd.DataFrame({'Name':'Geeks', 'Team':'Boston', 'Number':3,
 # simply concatenate both dataframes
 data = pd.concat([new_row, data]).reset_index(drop = True)
 data.head(5)
+
+
+ 
+# dictionary of lists
+dict = {'name':["aparna", "pankaj", "sudhir", "Geeku"],
+        'degree': ["MBA", "BCA", "M.Tech", "MBA"],
+        'score':[90, 40, 80, 98]}
+
+# creating a dataframe with boolean index  
+df = pd.DataFrame(dict, index = [True, False, True, False])
+ 
+
+# accessing a dataframe using .iloc[] function
+print(df.iloc[1])
+
+## Slicing The rowS And Columns 
+print("Slicing Only Till row 4:")
