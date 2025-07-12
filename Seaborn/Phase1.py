@@ -84,6 +84,8 @@ import seaborn.objects as so
 
 ##
 (
-  so.Plot(penguins,x="species",y="body_mass_g",color="sex",col="Sex").add(so.Bar(),so.Agg()).show() ## Here Aggreagate Means think 
-                                                                   ## it Has two species named same name so there aggregate means /2 
+  so.Plot(penguins,x="species",y="body_mass_g",color="sex").add(so.Bar(),so.Agg()).show() ## Here Aggreagate Means think 
+    ## it Has two species named same name so there aggregate means /2
+    ## If want male and Female in Differnt Things then its SimPLe By so.Dodge() 
 )
+## ---->>> Important if you Add "ORIENT =Y" Graphs Bars on HORIZONATL 

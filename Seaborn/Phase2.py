@@ -46,9 +46,26 @@ plt.show()
 ### 4th Topic Visualizing the Statistical Data 
 ### Here we are Seeing new Parameter Named error Bar if it is None than Dont Show any error bar 
 fmri = sns.load_dataset("fmri")
+## here in replot it have two options scatter,relplot and catplot have two options kde and bar 
 sns.relplot(
     data=fmri, kind="line",
-    x="timepoint", y="signal", errorbar="sd",
+    x="timepoint", y="signal", errorbar="sd", ## Now here that Error is sd Means it will Stands sd 
     
 )
 plt.show()
+
+### sns.displot(tips, x="day", shrink=.8)
+##These thing is Used to get the Width Between the Two Distributional Bars 
+
+##Now we are Looking for the 2D Histogram
+sns.displot(x="") ## Here if i mention y axis also then it will be of 2 Dimenstionl Histogram 
+## Same thing Will Follow Up for the Kde Plot Also 
+
+
+
+## Expalination About the Graphs Here Lets Say Like Histogram Here is 2d Histogram Sice it is A 2d Thing here we will 
+## ##will Get the 2D Histogram in the Center and top boxplot for x axis 
+## RIght boxplot for the Y axis 
+g = sns.JointGrid(data=penguins, x="bill_length_mm", y="bill_depth_mm")
+g.plot_joint(sns.histplot)
+g.plot_marginals(sns.boxplot)

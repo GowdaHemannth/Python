@@ -1,4 +1,5 @@
 import seaborn as sns
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn.objects as so
 ##tips = sns.load_dataset("tips")
@@ -34,9 +35,23 @@ tips = sns.load_dataset("tips")
 
 ## ------->>>>>> Here you will get the Upper Class Elemnts where you can Choose which one Should be Upper Class and Whic
 ##-------->>> Which one Should be lower And Which One Should Be Diagonal 
-iris = sns.load_dataset("iris")
-g=sns.PairGrid(iris)
-g.map_upper(sns.scatterplot)
-g.map_lower(sns.kdeplot)
-g.map_diag(sns.kdeplot)
-plt.show()  
+##iris = sns.load_dataset("iris")
+##g=sns.PairGrid(iris)
+##g.map_upper(sns.scatterplot)
+##g.map_lower(sns.kdeplot)
+##g.map_diag(sns.kdeplot)
+## plt.show()  
+
+
+## Finding How well or Hows the Data is Spread 
+##q1 = np.percentile(data, 25)   # 25th percentile
+
+##q2 = np.percentile(data, 50)   # 50th percentile (Median)
+##q3 = np.percentile(data, 75)   # 75th percentile
+
+##Here As you can See the Iqr is low means data is Tightly Packed 
+##iqr = q3 - q1
+
+## Here we are Learning the Data Cleaning process 
+Data1 = pd.read_csv("C:/Users/Heman/OneDrive/Desktop/df1.csv")
+print(Data1.isnull())
