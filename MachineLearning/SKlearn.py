@@ -67,5 +67,3 @@ from sklearn.compose import ColumnTransformer
     ##('t3',OneHotEncoder(sparse=False,drop='first'),['Gender','City'])
 ##],remainder='passthrough')
 ## These remainder passthrough leave the Remaining has it is 
-df = pd.read_csv('Geeksforgeeks/Data/diabetes.csv')
-print(df.head())

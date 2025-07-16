@@ -20,3 +20,7 @@ plt.title('Count Plot of Quality')
 plt.xlabel('Quality')
 plt.ylabel('Count')
 plt.show()
+
+
+## Feature Engineering it is techinques of Converting the Raw Data into the Useful Data 
+## Here it inclueds Selecting The impoetant Feature 
